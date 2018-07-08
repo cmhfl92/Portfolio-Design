@@ -13,8 +13,8 @@
   position: absolute;
   top: 33%;
   left: 34%;
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 .headshot img {
@@ -92,28 +92,27 @@ a:hover {
   padding: 0 28% 5%;
 }
 
-.imageLink {
-  height: 40px;
-  width: 50px;
-  margin: 20px;
+.icons {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.icons {
+.imageLink {
   height: 100px;
   width: 100px;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 0% 0% 0% 19%;
+  transition: all 0.2s ease;
 }
 
 .icons img {
   padding: 2%;
 }
 
-.icons img:hover {
-  color: #70e4d0;
+.imageLink:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 @media screen and (max-width: 800px) {
