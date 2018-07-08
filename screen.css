@@ -4,19 +4,24 @@
   min-height: 50vh;
 }
 
+.header:hover {
+  background-color: #ff4f58;
+  transition: background-color 0.5s ease;
+}
+
 .headshot {
   position: absolute;
   top: 33%;
   left: 34%;
-  right: 0;
-  bottom: 0;
   -webkit-animation-duration: 4s;
   animation-duration: 4s;
 }
 
-img {
+.headshot img {
   position: relative;
   border-radius: 50%;
+  width: 300px;
+  height: 320px;
 }
 
 .name .first {
@@ -41,6 +46,11 @@ a {
   color: #ff4f58 !important;
   font-weight: 900;
   text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 0.5;
 }
 
 @-webkit-keyframes fadeIn {
@@ -63,6 +73,11 @@ a {
   min-height: 50vh;
 }
 
+.technical_section:hover {
+  background-color: #70e4d0;
+  transition: background-color 0.5s ease;
+}
+
 .technial_content h1 {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 900;
@@ -77,9 +92,28 @@ a {
   padding: 0 28% 5%;
 }
 
-.icons {
-  height: 50px;
+.imageLink {
+  height: 40px;
   width: 50px;
+  margin: 20px;
+}
+
+.icons {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0% 0% 0% 19%;
+}
+
+.icons img {
+  padding: 2%;
+}
+
+.icons img:hover {
+  color: #70e4d0;
 }
 
 @media screen and (max-width: 800px) {
