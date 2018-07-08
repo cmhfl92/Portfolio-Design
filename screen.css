@@ -1,47 +1,40 @@
 
 .header {
   background-color: #70e4d0;
-  min-height: 90vh;
+  min-height: 50vh;
 }
 
-.letterC {
+.headshot {
   position: absolute;
-  top: 10%;
-  left: 39%;
+  top: 33%;
+  left: 34%;
   right: 0;
   bottom: 0;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
 }
 
 img {
   position: relative;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+  border-radius: 50%;
 }
 
-.first {
+.name .first {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 900;
   color: #ff4f58;
   font-size: 50px;
-  position: absolute;
-  right: 20%;
-  top: 14%;
-  -webkit-animation-duration: 6s;
-  animation-duration: 6s;
+  padding: 10% 10% 0;
 }
 
-.last {
+.name .last {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 40px;
-  position: absolute;
-  right: 15%;
-  top: 22%;
-  -webkit-animation-duration: 6s;
-  animation-duration: 6s;
+  padding: 0 28% 5%;
 }
 
-.about_content {
-  padding: 40% 5% 0% 22%;
+.name p {
+  padding: 2% 10%;
 }
 
 a {
@@ -60,16 +53,14 @@ a {
   }
 }
 
-img,
-.first,
-.last {
+.headshot {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
 
 .technical_section {
   background-color: #ff4f58;
-  min-height: 90vh;
+  min-height: 50vh;
 }
 
 .technial_content h1 {
@@ -84,6 +75,11 @@ img,
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 40px;
   padding: 0 28% 5%;
+}
+
+.icons {
+  height: 50px;
+  width: 50px;
 }
 
 @media screen and (max-width: 800px) {
