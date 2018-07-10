@@ -63,7 +63,8 @@ a:hover {
   }
 }
 
-.headshot {
+.headshot,
+.headShotMobile {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
@@ -105,6 +106,10 @@ a:hover {
   transition: all 0.2s ease;
 }
 
+.labs {
+  height: 100px;
+}
+
 .icons img {
   padding: 2%;
 }
@@ -115,10 +120,57 @@ a:hover {
   transform: scale(1.3);
 }
 
+/* mobile */
 @media screen and (max-width: 800px) {
-  /* h1 {
-    color: blue;
-  } */
+  .headShotMobile {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    border-radius: 50%;
+    width: 230px;
+    height: 250px;
+    display: flex;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
+
+  .tealBar {
+    height: 8px;
+    width: 52%;
+    background-color: #70e4d0;
+    float: right;
+  }
+
+  .name .first {
+    padding: 3% 7% 0;
+  }
+
+  .name .last {
+    padding: 0 20%;
+  }
+
+  .name p {
+    padding: 10%;
+  }
+
+  .salmonBar {
+    height: 8px;
+    width: 52%;
+    background-color: #ff4f58;
+  }
+
+  .technial_content h1 {
+    padding: 3% 39% 0;
+  }
+
+  .technial_content h2 {
+    padding: 0 28% 7%;
+  }
+
+  .icons {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 @charset "UTF-8";
